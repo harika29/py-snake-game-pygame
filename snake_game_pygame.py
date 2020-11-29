@@ -8,7 +8,7 @@ screen = pygame.display.set_mode([screen_width, screen_height])  # Initialise th
 pygame.display.set_caption("Snake Game By Harika")  # set caption to the screen
 
 clock = pygame.time.Clock()  # to set speed of snake movement on the screen
-snake_speed = 10
+snake_speed = 7
 snake_block_size = 10
 
 font_style = pygame.font.SysFont(None, 30)
@@ -108,7 +108,7 @@ def snake_game():
         clock.tick(snake_speed)
 
     pygame.quit()
+    quit()
 
 
 snake_game()
-
